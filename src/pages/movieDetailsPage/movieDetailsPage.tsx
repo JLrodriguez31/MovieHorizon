@@ -123,7 +123,7 @@ export default function MovieDetailsPage() {
   return (
     <>
       <div
-        className="min-h-screen text-white relative"
+        className="h-dvh text-white relative"
         style={{
           backgroundImage: `linear-gradient(to right, rgba(31.5, 31.5, 31.5, 1) calc((50vw - 170px) - 340px), rgba(31.5, 31.5, 31.5, 0.84) 50%, rgba(31.5, 31.5, 31.5, 0.64) 100%), url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces${movie.backdrop_path})`,
           backgroundSize: "cover",
@@ -133,7 +133,7 @@ export default function MovieDetailsPage() {
         <Navbar logo={logo2} />
 
         <div className="container mx-auto px-6 md:px-8 pb-16 pt-6">
-          <div className="rounded-2xl ring-1 ring-white/5 p-6 md:p-8 shadow-xl border border-white/10 bg-black/20 backdrop-blur-xs">
+          <div>
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="flex-shrink-0">
                 <img
@@ -222,15 +222,15 @@ export default function MovieDetailsPage() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="rounded-lg bg-black/40 ring-1 ring-white/10 p-4">
+                  <div className="rounded-lg bg-white/10 ring-1 ring-white/10 p-4">
                     <p className="font-semibold text-white">{getDirector()}</p>
                     <p className="text-white/60 text-sm">Director</p>
                   </div>
-                  <div className="rounded-lg bg-black/40 ring-1 ring-white/10 p-4">
+                  <div className="rounded-lg bg-white/10 ring-1 ring-white/10 p-4">
                     <p className="font-semibold text-white">{getWriter()}</p>
                     <p className="text-white/60 text-sm">Writer</p>
                   </div>
-                  <div className="rounded-lg bg-black/40 ring-1 ring-white/10 p-4">
+                  <div className="rounded-lg bg-white/10 ring-1 ring-white/10 p-4">
                     <p className="font-semibold text-white">{getProducer()}</p>
                     <p className="text-white/60 text-sm">Producer</p>
                   </div>
