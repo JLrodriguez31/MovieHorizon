@@ -55,23 +55,19 @@ export default function Navbar({ logo, bgColor }: NavbarProps) {
   return (
     <nav className={`w-full z-40 text-white ${bgColor} font-medium tracking-wide`}>
       <div className="relative w-full py-10 px-6 sm:px-10 lg:px-14">
-        {/* Desktop Grid (md and up) for perfectly even spacing */}
         <div className="hidden md:grid grid-cols-5 items-center mx-auto w-full">
-          {/* Col 1 */}
           <div className="flex justify-center">
             <button onClick={() => handleNav("/movies")} className={heroLinkBase}>
               <span className="group-hover:text-white/80">MOVIES</span>
               <span className={heroUnderline} />
             </button>
           </div>
-          {/* Col 2 */}
           <div className="flex justify-center">
             <button onClick={() => handleNav("/movies")} className={heroLinkBase}>
               <span className="group-hover:text-white/80">TV SHOWS</span>
               <span className={heroUnderline} />
             </button>
           </div>
-          {/* Col 3 (Logo) */}
           <div className="flex justify-center">
             <button
               onClick={() => handleNav("/")}
@@ -80,11 +76,10 @@ export default function Navbar({ logo, bgColor }: NavbarProps) {
               <img
                 src={logo}
                 alt="Logo"
-                className="w-14 lg:w-20 h-auto drop-shadow-[0_0_10px_rgba(0,0,0,0.35)] hover:scale-[1.1] transition-transform ease-in-out duration-500"
+                className="w-14 lg:w-26 h-auto drop-shadow-[0_0_10px_rgba(0,0,0,0.35)] hover:scale-[1.1] transition-transform ease-in-out duration-500"
               />
             </button>
           </div>
-          {/* Col 4 */}
           <div className="flex justify-center">
             <button onClick={() => handleNav("/movies")} className={heroLinkBase}>
               <span className="group-hover:text-white/80">ACTORS</span>

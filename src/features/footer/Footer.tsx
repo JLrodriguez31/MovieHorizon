@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
           <div className="flex flex-col justify-center items-center">
-            <Logo width="w-28 lg:w-32" styles="mb-8" />
+            <Logo width="w-28 lg:w-30 mt-1" styles="mb-6" />
             <Link to={user ? "/movies" : "/login"}>
               <Button variant="primary" styles="hover:text-black">
                 {user ? (
