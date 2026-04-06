@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 
 type FadeInOnScrollProps = {
   children: React.ReactNode;
-  delayMs?: number; // stagger delay per item
+  delayMs?: number;
   className?: string;
-  once?: boolean; // animate once only
+  once?: boolean;
 };
 
 export default function FadeInOnScroll({

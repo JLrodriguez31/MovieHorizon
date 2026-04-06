@@ -54,48 +54,47 @@ export default function Navbar({ logo, bgColor }: NavbarProps) {
 
   return (
     <nav className={`w-full z-40 text-white ${bgColor} font-medium tracking-wide`}>
-      <div className="relative w-full py-10 px-6 sm:px-10 lg:px-14">
+      <div className="relative w-full py-6 px-6 sm:px-10 lg:px-14">
         <div className="hidden md:grid grid-cols-5 items-center mx-auto w-full">
           <div className="flex justify-center">
             <button onClick={() => handleNav("/movies")} className={heroLinkBase}>
-              <span className="group-hover:text-white/80">MOVIES</span>
+              <span className="group-hover:text-white/80 cursor-pointer">MOVIES</span>
               <span className={heroUnderline} />
             </button>
           </div>
           <div className="flex justify-center">
             <button onClick={() => handleNav("/movies")} className={heroLinkBase}>
-              <span className="group-hover:text-white/80">TV SHOWS</span>
+              <span className="group-hover:text-white/80 cursor-pointer">TV SHOWS</span>
               <span className={heroUnderline} />
             </button>
           </div>
           <div className="flex justify-center">
             <button
               onClick={() => handleNav("/")}
-              className="focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 rounded-md"
+              className="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 rounded-md"
             >
               <img
                 src={logo}
                 alt="Logo"
-                className="w-14 lg:w-26 h-auto drop-shadow-[0_0_10px_rgba(0,0,0,0.35)] hover:scale-[1.1] transition-transform ease-in-out duration-500"
+                className="w-18 lg:w-26 h-auto drop-shadow-[0_0_10px_rgba(0,0,0,0.35)] hover:scale-[1.1] transition-transform ease-in-out duration-500"
               />
             </button>
           </div>
           <div className="flex justify-center">
             <button onClick={() => handleNav("/movies")} className={heroLinkBase}>
-              <span className="group-hover:text-white/80">ACTORS</span>
+              <span className="group-hover:text-white/80 cursor-pointer">ACTORS</span>
               <span className={heroUnderline} />
             </button>
           </div>
-            {/* Col 5: Register or Logout */}
             <div className="flex justify-center">
               {user ? (
                 <button onClick={handleLogout} className={heroLinkBase}>
-                  <span className="group-hover:text-white/80">LOGOUT</span>
+                  <span className="group-hover:text-white/80 cursor-pointer">LOGOUT</span>
                   <span className={heroUnderline} />
                 </button>
               ) : (
                 <button onClick={() => handleNav("/register")} className={heroLinkBase}>
-                  <span className="group-hover:text-white/80">REGISTER</span>
+                  <span className="group-hover:text-white/80 cursor-pointer">REGISTER</span>
                   <span className={heroUnderline} />
                 </button>
               )}
@@ -129,7 +128,7 @@ export default function Navbar({ logo, bgColor }: NavbarProps) {
           </button>
           {/* Logo */}
           <button onClick={() => handleNav("/")}> 
-            <img src={logo} alt="Logo" className="w-16 h-auto" />
+            <img src={logo} alt="Logo" className="w-18 h-auto" />
           </button>
           {/* Placeholder to keep symmetry with hamburger width */}
           <div className="w-9" />
@@ -151,7 +150,7 @@ export default function Navbar({ logo, bgColor }: NavbarProps) {
               <img
                 src={logo}
                 alt="Logo"
-                className="w-10 cursor-pointer"
+                className="w-18 cursor-pointer"
                 onClick={() => handleNav("/")}
               />
               <button
