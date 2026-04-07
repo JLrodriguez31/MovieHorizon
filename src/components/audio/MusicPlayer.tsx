@@ -6,16 +6,16 @@ import lofi3 from "@/assets/audio/Lofidreams.mp3";
 import lofi4 from "@/assets/audio/lofi4.mp3";
 
 const TRACKS = [
-  { title: "FASSounds", src: lofi1 },
-  { title: "NastelBom", src: lofi2},
   { title: "Lofidreams", src: lofi3 },
+  { title: "NastelBom", src: lofi2},
+    { title: "FASSounds", src: lofi1 },
   { title: "NastelBom", src: lofi4 },
 ];
 
 export default function LofiChillPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [volume, setVolume] = useState(32);
+  const [volume, setVolume] = useState(8);
   const [trackIndex, setTrackIndex] = useState(0);
   const [isCollapsed, setIsCollapsed] = useState(true);
 

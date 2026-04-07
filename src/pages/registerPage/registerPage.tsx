@@ -4,7 +4,7 @@ import { auth } from "../../auth/firebase";
 import { FirebaseError } from "firebase/app";
 import { useNavigate } from "react-router-dom";
 import { PATHS } from "@/routes/paths";
-import darklogo from "../../assets/black-logo.svg";
+import darklogo from "../../assets/logoicon-black.png";
 import rotateVid from "@/assets/a.mp4";
 import usePlaybackRate from "@/hooks/usePlaybackRate";
 
@@ -60,7 +60,7 @@ const RegisterPage = () => {
               <form onSubmit={handleRegister} className="max-w-md mx-auto">
                 {/* Logo */}
                 <div className="flex items-center justify-center mb-8">
-                  <img src={darklogo} alt="Logo" onClick={() => navigate(PATHS.root)} className="h-12 cursor-pointer hover:scale-[1.1] transition-transform ease-in-out duration-500" />
+                  <img src={darklogo} alt="Logo" onClick={() => navigate(PATHS.root)} className="h-19 cursor-pointer hover:scale-[1.1] transition-transform ease-in-out duration-500" />
                 </div>
                 {/* Heading */}
                 <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 text-center">Create your account</h1>

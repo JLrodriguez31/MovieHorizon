@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FirebaseError } from "firebase/app";
 import { sendPasswordResetEmail } from "firebase/auth";
 import { PATHS } from "@/routes/paths";
-import darklogo from "../../assets/black-logo.svg";
+import darklogo from "../../assets/logoicon-black.png";
 import rotateVid from "@/assets/a.mp4";
 import usePlaybackRate from "@/hooks/usePlaybackRate";
 import { auth } from "@/auth/firebase";
@@ -94,7 +94,7 @@ const LoginPage = () => {
                   src={darklogo}
                   onClick={() => navigate(PATHS.root)}
                   alt="Logo"
-                  className="h-12 cursor-pointer hover:scale-[1.1] transition-transform ease-in-out duration-500"
+                  className="h-19 cursor-pointer hover:scale-[1.1] transition-transform ease-in-out duration-500"
                 />
               </div>
               {/* Heading */}
@@ -155,7 +155,7 @@ const LoginPage = () => {
                 <button
                   type="button"
                   onClick={handleForgotPassword}
-                  className="text-gray-600 hover:text-black"
+                  className="text-gray-600 hover:text-black cursor-pointer transition-colors"
                 >
                   Forgot password?
                 </button>
@@ -164,7 +164,7 @@ const LoginPage = () => {
               {/* Primary CTA */}
               <button
                 type="submit"
-                className="mt-6 w-full rounded-full bg-black text-white py-3 font-medium hover:bg-black/90 transition"
+                className="mt-6 w-full rounded-full cursor-pointer bg-black text-white py-3 font-medium hover:bg-black/90 transition"
               >
                 Log In
               </button>
@@ -180,7 +180,7 @@ const LoginPage = () => {
               <button
                 onClick={handleGoogleLogin}
                 type="button"
-                className="w-full rounded-full border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 py-3 font-medium flex items-center justify-center gap-2"
+                className="w-full rounded-full border cursor-pointer border-gray-300 bg-white hover:bg-gray-50 text-gray-700 py-3 font-medium flex items-center justify-center gap-2"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -213,7 +213,7 @@ const LoginPage = () => {
                 <span>Don’t have an account?</span>
                 <button
                   type="button"
-                  className="underline underline-offset-4 hover:text-gray-700"
+                  className="underline underline-offset-4 hover:text-gray-700 cursor-pointer transition-colors"
                   onClick={() => navigate(PATHS.register)}
                 >
                   Sign Up

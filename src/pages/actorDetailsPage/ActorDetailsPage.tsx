@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { fetchActorDetails, fetchActorMovies } from "@/config/tmdb";
 import Navbar from "@/features/header/components/navbar/Navbar";
-import logo2 from "@/assets/white-logo.svg";
 import cardPlaceholder from "@/assets/card-placeholder.svg";
 
 interface ActorDetails {
@@ -54,7 +53,7 @@ export default function ActorDetailsPage() {
   if (loading)
     return (
       <div className="min-h-screen bg-[#050608] text-white">
-        <Navbar logo={logo2} />
+        <Navbar />
         <div className="relative flex items-center justify-center px-6 py-24">
           <div className="absolute -left-16 top-20 h-48 w-48 rounded-full bg-amber-400/20 blur-3xl" />
           <div className="absolute -right-12 bottom-20 h-56 w-56 rounded-full bg-sky-300/15 blur-3xl" />
@@ -68,7 +67,7 @@ export default function ActorDetailsPage() {
   if (!actor)
     return (
       <div className="min-h-screen bg-[#050608] text-white">
-        <Navbar logo={logo2} />
+        <Navbar/>
         <div className="flex min-h-[80vh] items-center justify-center px-6">
           <div className="rounded-2xl border border-red-300/40 bg-red-400/10 px-8 py-6 text-center">
             <p className="text-xl font-semibold">Actor not found</p>
@@ -119,7 +118,7 @@ export default function ActorDetailsPage() {
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(5,6,8,0.9)_0%,rgba(5,6,8,0.3)_50%,rgba(5,6,8,1.8)_100%)]"
         aria-hidden="true"
       />
-      <Navbar logo={logo2} />
+      <Navbar />
       <div className="relative mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 lg:px-8 lg:pb-16">
         <div className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-2xl backdrop-blur-md sm:p-8 lg:p-10">
           <div className="grid gap-8 sm:gap-12 sm:grid-cols-[280px_minmax(0,1fr)] xl:grid-cols-[300px_minmax(0,1fr)]">
