@@ -1,27 +1,18 @@
-# MovieHorizon
 
 <div align="center">
-	<img src="./src/assets/white-logo.svg" alt="MovieHorizon Logo" width="220" />
-	<h3>Explore movies, actors and details in a cinematic, responsive experience.</h3>
+	<img src="./src/assets/logoicon.PNG" alt="MovieHorizon Logo" width="220" />
+	<h3>Explore movies, actors and details in a diferent and unique way.</h3>
 
-	<p>
-		<img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
-		<img src="https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-		<img src="https://img.shields.io/badge/Vite-7-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
-		<img src="https://img.shields.io/badge/TailwindCSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" />
-		<img src="https://img.shields.io/badge/Firebase-Auth-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase" />
-		<img src="https://img.shields.io/badge/TMDB-API-01D277?style=flat-square" alt="TMDB" />
-	</p>
+	
+![Technologie Icons](https://skillicons.dev/icons?i=html,css,tailwind,typescript,react,jest,firebase,nodejs,vite,figma,github,git "Technologie Icons")
+
 </div>
 
 ---
 
 ## 🚀 Demo
 
-> Add your deployed URL here when ready.
-
-- Production: Pending
-- Storybook: Run locally with `npm run storybook`
+👉 <a href=https://jlrodriguez31.github.io/MovieHorizon/>github.io/MovieHorizon</a>
 
 ---
 
@@ -147,27 +138,12 @@ src/
 ### 1) Clone and install
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/JLrodriguez31/MovieHorizon.git
 cd MovieApp-v2
 npm install
 ```
 
-### 2) Environment variables
-
-Create a `.env` file in the project root:
-
-```env
-VITE_TMDB_API_KEY=your_tmdb_api_key
-
-VITE_FIREBASE_API_KEY=your_firebase_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
-VITE_FIREBASE_APP_ID=your_firebase_app_id
-```
-
-### 3) Run locally
+### 2) Run locally
 
 ```bash
 npm run dev
@@ -189,33 +165,6 @@ Open: `http://localhost:5173`
 
 ---
 
-## 🧭 Navigation Flow
-
-1. Welcome page
-2. Login or register (or continue as guest)
-3. Movies list
-4. Movie details
-5. Actor details
-
----
-
-## 🔒 Security Notes
-
-- API keys are read from environment variables
-- Auth state is managed centrally through context
-- Protected routes block non-authenticated/non-guest users
-
----
-
-## 📌 Roadmap
-
-- Favorites and watchlist persistence
-- Search and filtering improvements
-- Better user profile and preferences
-- Optional dark/light theme switcher
-
----
-
 ## 👨‍💻 Author
 
-Built by MovieHorizon Team.
+Built by Juan Luis Rodriguez Chavarria.
