@@ -14,7 +14,7 @@ import LofiChillPlayer from "./components/audio/MusicPlayer";
 import { useAuth } from "./auth/hooks/useAuth";
 
 function AppContent() {
-  const { user } = useAuth();
+  const { user, isGuest } = useAuth();
 
   return (
     <HashRouter>
@@ -51,7 +51,7 @@ function AppContent() {
         />
       </Routes>
       <Footer />
-      {user && <LofiChillPlayer />}
+      {(user || isGuest) && <LofiChillPlayer />}
     </HashRouter>
   );
 }
