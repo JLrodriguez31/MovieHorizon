@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@keyframes grain-shift {
+	0% {
+		background-position: 0 0;
+	}
+	20% {
+		background-position: -18px 12px;
+	}
+	40% {
+		background-position: 14px -20px;
+	}
+	60% {
+		background-position: -12px 7px;
+	}
+	80% {
+		background-position: 18px -10px;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.animate-grain {
+	animation: grain-shift 8s steps(2) infinite;
+	will-change: background-position;
+}
