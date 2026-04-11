@@ -13,7 +13,7 @@ export default function Main() {
 
       {/* Overlay to improve text readability */}
       <div
-        className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.01),rgba(0,0,0,0.01),rgba(0,0,0,0.01),rgba(0,0,0,1))]"
+        className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.01),rgba(0,0,0,0.01),rgba(0,0,0,0.01),rgba(0,0,0,1))]"
         aria-hidden="true"
       />
 

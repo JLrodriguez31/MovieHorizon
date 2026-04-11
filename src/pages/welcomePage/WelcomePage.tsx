@@ -1,5 +1,5 @@
 import Main from "../../features/main/MainFeature";
-import backgroundVideo from "../../assets/background.mp4";
+import backgroundVideo from "../../assets/bgvideo4k2.mp4";
 import grainTexture from "../../assets/grain.png";
 
 export default function WelcomePage() {
@@ -16,7 +16,7 @@ export default function WelcomePage() {
       </video>
 
       <div
-        className="animate-grain pointer-events-none absolute inset-0 z-[1] bg-repeat opacity-50 mix-blend-soft-light"
+        className="animate-grain pointer-events-none absolute inset-0 z-[1] bg-repeat opacity-0 mix-blend-soft-light"
         style={{ backgroundImage: `url(${grainTexture})` }}
         aria-hidden="true"
       />
